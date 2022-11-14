@@ -21,5 +21,17 @@ namespace Project_1
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Capture_Details capture = new Capture_Details();        
+            this.Hide();
+            capture.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

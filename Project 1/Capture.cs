@@ -21,5 +21,13 @@ namespace Project_1
         {
 
         }
+
+        private void btnViewDetails_Click(object sender, EventArgs e)
+        {
+         
+            View_Details view= new View_Details();
+            this.Hide();
+            view.ShowDialog();
+        }
     }
 }
