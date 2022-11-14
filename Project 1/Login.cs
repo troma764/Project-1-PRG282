@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace Project_1
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        SqlConnection conn = new SqlConnection("Server =LAPTOP-R3UI0P7F; Initial Catalog =PremierLeague; Integrated Security =True");
-        public Form1()
+        //SqlConnection conn = new SqlConnection("Server =LAPTOP-R3UI0P7F; Initial Catalog =PremierLeague; Integrated Security =True");
+        public Login()
         {
             InitializeComponent();
         }
@@ -38,6 +38,11 @@ namespace Project_1
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
