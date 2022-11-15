@@ -23,12 +23,13 @@ namespace Project_1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = "me";
-            string password = "123";
-            //String username, user_password;
 
-            //username = txtboxUsername.Text;
-            //user_password = txtboxPassword.Text;
+            //string username = "me";
+            //string password = "123";
+            String username, user_password;
+
+            username = txtboxUsername.Text;
+            user_password = txtboxPassword.Text;
 
             if (txtboxUsername.Text == "" || txtboxPassword.Text == "")
             {
@@ -41,7 +42,7 @@ namespace Project_1
                     MessageBox.Show("Attempts more than 3. Who are you?");
                     
                 }
-                else if (username.Equals(txtboxUsername.Text) && password.Equals(txtboxPassword.Text))
+                else if (username.Equals(txtboxUsername.Text) && user_password.Equals(txtboxPassword.Text))
                 {
                     Capture_Details capture = new Capture_Details();
                     MessageBox.Show($"Welcome back {username}");
@@ -68,6 +69,12 @@ namespace Project_1
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Registration res = new Registration();
+            res.Show();
         }
     }
 }

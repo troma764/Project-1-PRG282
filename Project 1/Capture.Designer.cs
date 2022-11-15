@@ -328,6 +328,7 @@ namespace Project_1
             this.Controls.Add(this.btnInsert);
             this.Name = "Capture_Details";
             this.Text = "Capture Details";
+            this.Load += new System.EventHandler(this.Capture_Details_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dGVStudentSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
