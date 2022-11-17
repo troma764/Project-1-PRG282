@@ -67,6 +67,7 @@ namespace Project_1
             this.btnInsert.TabIndex = 0;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // label1
             // 
@@ -207,6 +208,7 @@ namespace Project_1
             this.btnSearch.TabIndex = 32;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -247,6 +249,7 @@ namespace Project_1
             this.btnDelete.TabIndex = 36;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -259,6 +262,7 @@ namespace Project_1
             this.btnUpdate.TabIndex = 37;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label5
             // 
@@ -266,9 +270,9 @@ namespace Project_1
             this.label5.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(421, 235);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 18);
+            this.label5.Size = new System.Drawing.Size(67, 18);
             this.label5.TabIndex = 38;
-            this.label5.Text = "Enter Name";
+            this.label5.Text = "Enter ID";
             // 
             // label6
             // 
@@ -290,7 +294,10 @@ namespace Project_1
             "MAT281",
             "DBD281",
             "WPR281",
-            "LPR281"});
+            "LPR281",
+            "INF281",
+            "DBD181",
+            "COA181"});
             this.comboBox1.Location = new System.Drawing.Point(124, 195);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(187, 21);
